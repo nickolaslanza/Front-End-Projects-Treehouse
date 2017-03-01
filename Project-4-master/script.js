@@ -15,17 +15,13 @@ $(document).ready(function(){
       'I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.'
     ];
 
-  var $numbers = [0,1,2,3,4,5,6,7,8,9,10,11];
-
   var $title = ['Hay Bales', 'Lake', 'Canyon', 'Iceberg', 'Desert', 'Fall', 'Plantation', 'Dunes', 'Countryside Lane', 'Sunset', 'Cave', 'Bluebells'];
 
   function loadImages() {
-    var $newimages ='<div class="filtr-container">';
+    $newimages = '<div class="list">';
     for (var i = 0; i < $alt.length; i++) {
-      $newimages += '<div class="filter-item" data-catergory="1" data-sort="' + $title[i] + '">';
-      $newimages += '<a href="images/' + i + '.jpg" data-lightbox="image-' + i + '" data-title="' + $alt[i] + '">';
-      $newimages += '<img src="' + 'images/thumbnails/' + i + '.jpg" class="image"></a>';
-      $newimages += '</div>';
+      $newimages += '<a href="images/' + i + '.jpg" data-lightbox="images" data-title="' + $alt[i] + '">';
+      $newimages += '<img src="' + 'images/thumbnails/' + i + '.jpg" class="image" alt="' + $alt[i] + '" data-keywords="' + $title[i] + '"></a>';
     }
     $newimages += '</div>';
 
@@ -38,8 +34,25 @@ $(document).ready(function(){
     });
 
     $('.container').html($newimages);
+  }
 
+  function search() {
+    $('#search').keyup(function() {
+      var current_query = $(this).val();
+      if (current_query != '') {
+        $('.list img').hide();
+        $('.list img').each(function(){
+          var current_keyword = $(this).attr('data-keywords');
+          if (current_keyword.indexOf(current_query) >= 0) {
+            $(this).show();
+          }
+        });
+      } else {
+        $('.list img').show();
+      }
+    });
   }
 
   loadImages();
+  search();
 });

@@ -35,20 +35,15 @@ input {
     max-width: 800px;
   }
 
-  .filter-item {
-    display: inline-block;
+  .list img{
     width: 30%;
-    margin: 0 auto;
-  }
-
-  .filter-item img {
     padding: 5px;
   }
 
 }
 
 @media screen and (min-width:768px) {
-  .filter-item {
+  .list img {
     padding: 20px;
   }
 
