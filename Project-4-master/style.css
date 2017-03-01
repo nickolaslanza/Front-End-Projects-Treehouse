@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  font: 50px black;
+  text-align: center;
+  margin: 80px 20px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+input {
+  width: 80%;
+  border: 2px solid lightblue;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 90%;
+}
+
+.image {
+  width: 100%;
+  padding: 1%;
+  text-align:center;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .filter-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .filter-item img {
+    padding: 5px;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  .filter-item {
+    padding: 20px;
+  }
+
+  input {
+    width: 40%;
+  }
+}

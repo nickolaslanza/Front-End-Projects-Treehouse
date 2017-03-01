@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600|Permanent+Marker" rel="stylesheet">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <!-- title and search bar -->
+    <div class="title">
+      <label for="searchbox">Pictures: </label>
+      <input type="text" class="filtr-search" name="filtr-search" data-search id='searchbox'>
+    </div>
+
+    <div class='container'>
+      <!-- Where the images go-->
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+
+    <!-- filterizr plugin -->
+    <script src="filterizr/jquery.filterizr.min.js"></script>
+
+    <!-- lightbox plugin -->
+    <script src='lightbox/lightbox.js'></script>
+
+    <!-- myscript -->
+    <script src='script.js' type="text/javascript"></script>
+
+    <script type="text/javascript">
+      var filterizd = $(".filtr-container").filterizr({});
+    </script>
+  </body>
+</html>

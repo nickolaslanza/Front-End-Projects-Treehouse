@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Project #3 Treehouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <form class="newsletter1" action="thankyou.html" method="post">
+      <h1 class='title'>the code review</h1>
+
+      <fieldset class='header'>
+        <h1>Signup for our newsletter</h1>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </fieldset>
+
+      <hr class='thick'>
+      <hr class='thin'>
+
+      <fieldset class='main-info'>
+        <h2>Contact Information</h2>
+
+        <div class="container">
+          <label for="fullname">Full Name</label>
+          <input type="text" id='fullname' name="name" value="" placeholder='Required' required>
+        </div>
+        <br>
+
+        <div class="container">
+          <label for="email">Email Address</label>
+          <input type="text" id='email' name="emailaddress" value="" placeholder='Required' required>
+        </div>
+        <br>
+
+        <div class="container">
+          <label for="phone">Phone Number</label>
+          <input type="text" id='phone' name="phonenumber" value="">
+        </div>
+        <br>
+
+        <div class="container">
+          <label for="street">Street Address</label>
+          <input type="text" id='street' name="streetaddress" value="">
+        </div>
+        <br>
+
+        <div class="container">
+          <label for="city">City</label>
+          <input type="text" id='city' name="city" value="">
+        </div>
+        <br>
+
+        <div class="container">
+          <label for="state">State</label>
+          <br>
+          <select id='state' class="state" name="state">
+            <option value="" disabled selected>Choose State</option>
+            <option value="Alabama"> State'>Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho </option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+        </div>
+        <br>
+
+        <div class="container">
+          <label for="zip">Zip Code</label>
+          <input type="text" id='zip' name="zipcode" value="">
+        </div>
+      </fieldset>
+
+      <hr class='thin'>
+
+      <fieldset class='newsletter-info'>
+
+        <h2>Newsletter</h2>
+        <p>Select the newsletter you would like to recieve</p>
+
+        <input type="checkbox" id='htmlnews' name="htmlnews" value="htmlnews" checked>
+        <label for="htmlnews">HTML News</label>
+        <br>
+
+        <input type="checkbox" id='css' name="cssnews" value="cssnews">
+        <label for="css">CSS News</label>
+        <br>
+
+        <input type="checkbox" id='javascript' name="javascriptnews" value="javascriptnews">
+        <label for="javascript">Javascript News</label>
+        <br>
+
+        <p>Newsletter Format</p>
+
+        <input type="radio" id='html' name="html" value="html" checked>
+        <label for="html">HTML</label>
+        <br>
+
+        <input type="radio" id='plaintext' name="html" value="plaintext">
+        <label for="plaintext">Plain Text</label>
+        <br><br><br>
+
+        <label for="message" id='messagelabel'>Other topics you'd like to hear about.</label>
+        <textarea name="message" id='message' rows="4" cols="35"></textarea>
+        <br>
+
+        <button type="submit" name="button" class='button'>Sign up</button>
+
+      </fieldset>
+
+      <p class='copyrite'>Copyright The Code Review</p>
+    </form>
+
+  </body>
+</html>

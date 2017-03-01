@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-shadow: 1px 1px #708090;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  transition: .1s linear;
+}
+
+h1:hover {
+  font-size: 50px;
+}
+/*===================*/
+/*==== NAVIGATION ===*/
+/*===================*/
+
+.main-nav {
+  margin: 0 auto;
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+nav li {
+  padding: 10px;
+  list-style: none;
+}
+.name {
+  font-size: 20px;
+  text-transform: none;
+}
+
+
+/*===================*/
+/*==== HEADER =======*/
+/*===================*/
+
+.header {
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  background: #708090;
+  color: white;
+  border-radius: 20px;
+  text-shadow: .5px .5px #000;
+  max-width: 75%;
+}
+
+.header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+.header p {
+  width: 75%;
+  margin: 0 auto;
+}
+
+
+/*===================*/
+/*====== MAIN =======*/
+/*===================*/
+
+main h1,
+footer h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio {
+  margin-top: 50px;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+}
+
+
+/*===================*/
+/*====== FOOTER =====*/
+/*===================*/
+
+footer h1 {
+  margin-top: 100px;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 75%;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+
+/*===================*/
+/*==== FOOTER NAV ===*/
+/*===================*/
+
+.footer-nav {
+  visibility: hidden;
+}
+
+.tablet {
+  float: right;
+  margin-right: 10%;
+}
+
+.footer-name {
+  float: left;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  body {
+    max-width: 95%;
+    margin: 50px auto;
+  }
+
+  /*======== NAV ========*/
+
+  .main-nav {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    display: inline-block;
+  }
+
+  /*======== HEADER ======*/
+
+  .header {
+    width: 80%;
+    height: 200px;
+  }
+
+  .header img {
+    float: right;
+  }
+  .header p {
+    width: 60%;
+    float: left;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  /*======== MAIN ========*/
+
+  main {
+    margin-top: 100px;
+    clear: both;
+  }
+
+  main h1 {
+    margin-bottom: 50px;
+  }
+
+  .row {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .row .card {
+    display: inline-block;
+    max-width: 49%;
+    margin: 0 auto;
+  }
+
+  /*======== Contact ========*/
+
+  footer {
+    width: 60%;
+  }
+
+  /*======== Footer Nav ========*/
+
+  .footer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .tablet {
+    visibility: hidden;
+  }
+
+  ul .footer-nav {
+    visibility: visible;
+  }
+
+  .footer ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    max-width: 1100px;
+  }
+
+  /* ===== HEADER ===== */
+
+  #name {
+    margin-right: 300px;
+  }
+
+  .footer-name {
+    margin-right: 200px;
+  }
+
+  .main-nav,
+  .footer {
+    width: 80%;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item {
+    align-items: flex-end;
+  }
+
+  /* ===== MAIN ======= */
+
+  .row {
+    max-width: 1150px;
+  }
+  .row .card {
+    max-width: 33%;
+    margin: 0 auto;
+  }
+}
