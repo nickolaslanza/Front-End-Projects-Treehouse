@@ -4,6 +4,7 @@ $(document).ready(function() {
   var treehouseOptions = {
     format: 'json'
   };
+  
   function displayBadges(data) {
     var badgesHTML = '<h1>' + data.name + '</h1>';
     badgesHTML += '<h2>' + data.points.total + ' points on Treehouse.</h2>';

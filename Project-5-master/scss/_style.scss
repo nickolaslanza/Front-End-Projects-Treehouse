@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $stack-raleway;
+  margin-top: 50px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  &:hover {
+    text-shadow: 1px 1px $color-link-default;
+  }
+}
+
+
+h1 {
+  font-family: $stack-permanent-marker;
+  font-size: 40px;
+  transition: .1s linear;
+  &:hover {
+    font-size: 50px;
+  }
+}
+/*===================*/
+/*==== NAVIGATION ===*/
+/*===================*/
+
+.main-nav {
+  margin: $center;
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+  & li {
+    padding: 10px;
+    list-style: none;
+  }
+}
+
+.name {
+  font-size: 20px;
+  text-transform: none;
+}
+
+
+/*===================*/
+/*==== HEADER =======*/
+/*===================*/
+
+.header {
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+  background: #708090;
+  color: white;
+  border-radius: 20px;
+  text-shadow: .5px .5px #000;
+  max-width: 75%;
+
+  & img {
+    border-radius: 50%;
+    max-width: 150px;
+  }
+
+  & p {
+    width: 75%;
+    margin: $center;
+  }
+}
+
+
+/*===================*/
+/*====== MAIN =======*/
+/*===================*/
+
+main h1,
+footer h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#portfolio {
+  margin-top: 50px;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+}
+
+
+/*===================*/
+/*====== FOOTER =====*/
+/*===================*/
+
+footer {
+  text-align: center;
+  margin: $center;
+  padding: 20px;
+  max-width: 75%;
+
+  & h1 {
+    margin-top: 100px;
+  }
+
+  & span {
+    font-weight: bold;
+  }
+}
+
+
+
+
+/*===================*/
+/*==== FOOTER NAV ===*/
+/*===================*/
+
+.footer-nav {
+  visibility: hidden;
+}
+
+.tablet {
+  float: right;
+  margin-right: 10%;
+}
+
+.footer-name {
+  float: left;
+}
+
+
+
+@media screen and (min-width: $brk-narrow) {
+
+  body {
+    max-width: 95%;
+    margin: 50px auto;
+  }
+
+  /*======== NAV ========*/
+
+  .main-nav {
+    margin-bottom: 50px;
+  }
+
+  .item {
+    display: inline-block;
+  }
+
+  /*======== HEADER ======*/
+
+  .header {
+    width: 80%;
+    height: 200px;
+
+    & img {
+      float: right;
+    }
+
+    & p {
+      width: 60%;
+      float: left;
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+
+
+  /*======== MAIN ========*/
+
+  main {
+    margin-top: 100px;
+    clear: both;
+
+    & h1 {
+      margin-bottom: 50px;
+    }
+  }
+
+  .row {
+    max-width: 100%;
+    margin: $center;
+
+    & .card {
+      display: inline-block;
+      max-width: 49%;
+      margin: $center;
+    }
+  }
+
+  /*======== Contact ========*/
+
+  footer {
+    width: 60%;
+  }
+
+  /*======== Footer Nav ========*/
+
+  .footer {
+    max-width: 100%;
+    margin: $center;
+
+    & ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  .tablet {
+    visibility: hidden;
+  }
+
+  ul .footer-nav {
+    visibility: visible;
+  }
+
+}
+
+@media screen and ($brk-wide) {
+
+  body {
+    max-width: 1100px;
+  }
+
+  /* ===== HEADER ===== */
+
+  #name {
+    margin-right: 300px;
+  }
+
+  .footer-name {
+    margin-right: 200px;
+  }
+
+  .main-nav,
+  .footer {
+    width: 80%;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .item {
+    align-items: flex-end;
+  }
+
+  /* ===== MAIN ======= */
+
+  .row {
+    max-width: 1150px;
+
+    & .card {
+      max-width: 33%;
+      margin: $center;
+    }
+  }
+}

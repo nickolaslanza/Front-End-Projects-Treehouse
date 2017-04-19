@@ -1,0 +1,33 @@
+// ====================================================
+// Variables Imports
+// ====================================================
+
+
+//Descriptive color variables
+
+$black                  :#000;
+$white                  :#fff;
+
+//Functional color variables
+
+$color-text-light       :$white;
+$color-text-dark        :$black;
+$bg-secondary-color     :#708090;
+$color-link-default     :#708090;
+
+
+//Font stacks
+$stack-raleway          :'Raleway', sans-serif;
+$stack-permanent-marker :'Permanent Marker', cursive;
+
+
+//Asset paths
+$path-img               :'../img';
+$path-font              :'../fonts';
+
+// Media Query breakpoints
+$brk-narrow             : "(min-width:  768px)";
+$brk-wide               : "(min-width: 1024px)";
+
+// Aligning
+$div-center                 : 0 auto;

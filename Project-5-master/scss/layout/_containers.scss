@@ -1,0 +1,57 @@
+
+/*===================*/
+/*=== Containers ====*/
+/*===================*/
+
+main {
+  @media screen and #{$brk-narrow} {
+    main {
+      margin-top: 100px;
+      clear: both;
+
+      & h1 {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+main h1,
+footer h1 {
+  @extend %centered;
+  text-transform: uppercase;
+}
+
+#portfolio {
+  margin-top: 50px;
+}
+
+.card {
+  @extend %cards;
+}
+
+.row {
+  @media screen and #{$brk-narrow} {
+    .row {
+      max-width: 100%;
+      margin: $div-center;
+
+      & .card {
+        display: inline-block;
+        max-width: 49.6%;
+        margin: $div-center;
+      }
+    }
+  }
+
+  @media screen and #{$brk-wide} {
+    .row {
+      max-width: 1150px;
+
+      & .card {
+        max-width: 33%;
+        margin: $div-center;
+      }
+    }
+  }
+}

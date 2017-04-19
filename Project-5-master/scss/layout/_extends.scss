@@ -1,0 +1,17 @@
+//Center text
+%centered {
+  text-align: center;
+}
+
+%bg-shadow {
+  text-shadow: 1px 1px $color-link-default
+}
+
+%text-shadow {
+  text-shadow: .5px .5px #000;
+}
+
+%cards {
+  text-align: center;
+  padding: 10px;
+}

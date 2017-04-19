@@ -19,9 +19,9 @@ $(document).ready(function(){
 
   function loadImages() {
     $newimages = '<div class="list">';
-    for (var i = 0; i < $alt.length; i++) {
+    for (let i = 0; i < $alt.length; i++) {
       $newimages += '<a href="images/' + i + '.jpg" data-lightbox="images" data-title="' + $alt[i] + '">';
-      $newimages += '<img src="' + 'images/thumbnails/' + i + '.jpg" class="image" alt="' + $alt[i] + '" data-keywords="' + $title[i] + '"></a>';
+      $newimages += '<img src="' + 'images/thumbnails/' + i + '.jpg" class="image blur" alt="' + $alt[i] + '" data-keywords="' + $title[i] + ' ' +  $alt[i] + '"></a>';
     }
     $newimages += '</div>';
 
@@ -38,12 +38,14 @@ $(document).ready(function(){
 
   function search() {
     $('#search').keyup(function() {
-      var current_query = $(this).val();
+      let current_query = $(this).val().toLowerCase();
       if (current_query != '') {
         $('.list img').hide();
         $('.list img').each(function(){
-          var current_keyword = $(this).attr('data-keywords');
-          if (current_keyword.indexOf(current_query) >= 0) {
+          let current_keyword = $(this).attr("data-keywords").toLowerCase();
+          // Bitwsie NOT  ~ is used instead of >= 0
+          //if (current_keyword.indexOf(current_query >= 0))
+          if (~current_keyword.indexOf(current_query)) {
             $(this).show();
           }
         });

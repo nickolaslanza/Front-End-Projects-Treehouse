@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include text(1em, 1.5, $color: $color-text-dark);
+  font-family: $stack-raleway;
+  margin-top: 50px;
+
+  @media screen and #{$brk-narrow} {
+    body {
+      max-width: 95%;
+      margin: 50px auto;
+    }
+  }
+
+  @media screen and #{$brk-wide} {
+    body {
+      max-width: 1100px;
+    }
+  }
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  &:hover {
+    @extend %bg-shadow;
+  }
+}
+
+
+h1 {
+  font-family: $stack-permanent-marker;
+  font-size: 40px;
+  transition: .1s linear;
+  &:hover {
+    font-size: 50px;
+  }
+}

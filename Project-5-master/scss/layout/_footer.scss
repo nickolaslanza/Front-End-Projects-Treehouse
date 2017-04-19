@@ -1,0 +1,82 @@
+/*===================*/
+/*====== FOOTER =====*/
+/*===================*/
+
+footer {
+  @extend %centered;
+  margin: $div-center;
+  padding: 20px;
+  max-width: 75%;
+
+  & h1 {
+    margin-top: 100px;
+  }
+
+  & span {
+    font-weight: bold;
+  }
+
+  @media screen and #{$brk-narrow} {
+    footer {
+      width: 60%;
+    }
+  }
+}
+
+
+/*===================*/
+/*==== FOOTER NAV ===*/
+/*===================*/
+
+.footer-nav {
+  visibility: hidden;
+}
+
+.tablet {
+  float: right;
+  margin-right: 10%;
+
+  @media screen and #{$brk-narrow} {
+    .tablet {
+      visibility: hidden;
+    }
+  }
+
+}
+
+.footer-name {
+  float: left;
+  @media screen and #{$brk-wide} {
+    .footer-name {
+      margin-right: 200px;
+    }
+  }
+}
+
+.footer {
+  @media screen and #{$brk-narrow} {
+    .footer {
+      max-width: 100%;
+      margin: $div-center;
+
+      & ul {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  @media screen and #{$brk-wide} {
+    .footer {
+      width: 80%;
+    }
+  }
+}
+
+ul .footer-nav {
+  @media screen and #{$brk-narrow} {
+    ul .footer-nav {
+      visibility: visible;
+    }
+  }
+}

@@ -6,6 +6,7 @@ fieldset {
   border: none;
 }
 
+
 /*======================*/
 /*======= TITLE ======= */
 /*======================*/
@@ -47,6 +48,7 @@ fieldset {
 
 .thin {
   height: 4px;
+  margin-bottom: 20px;
 }
 
 /*======================*/
@@ -73,6 +75,7 @@ fieldset {
 ::-webkit-input-placeholder {
   text-align: right;
 }
+
 
 input[type=text],
 textarea {
